@@ -1,0 +1,10 @@
+import * as http from 'http';
+import { app } from './src/app';
+
+const PORT = process.env.PORT || 3000;
+
+const server = http.createServer(app)
+
+server.listen(PORT,() => {
+  console.info('Ampire service is listening on port', PORT)
+});
