@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  server:
+    container_name: server-dev
+    command: npm run dev
+  client:
+    container_name: client-dev
+    command: npm start
