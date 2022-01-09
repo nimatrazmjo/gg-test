@@ -1,4 +1,4 @@
-import { IErrorResponse } from "../types/error-response.interface";
+import { IErrorResponse } from "../interfaces/error-response.interface";
 import { CustomError } from "./custom.error";
 
 export class NotFoundError extends CustomError {

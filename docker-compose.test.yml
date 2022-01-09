@@ -1,9 +1,7 @@
-version: '3'
+version: '3.8'
 
 services:
   server:
+    tty: true
     container_name: server-test
-    command: npm test
-  client:
-    container_name: client-test
     command: npm test

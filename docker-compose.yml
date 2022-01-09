@@ -13,7 +13,7 @@ services:
     working_dir: /app
     volumes:
       - ./server:/app:cached
-      - ./server/node_modules
+      - './server/node_modules'
     networks:
       - node-network
   client:

@@ -2,8 +2,10 @@ version: '3.8'
 
 services:
   server:
+    tty: true
     container_name: server-dev
     command: npm start
   client:
+    tty: true
     container_name: client-dev
     command: npm start
