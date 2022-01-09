@@ -1,6 +1,9 @@
 version: '3'
 
 services:
-  node-app:
-    container_name: node-app-test
-    command: yarn test
+  server:
+    container_name: server-test
+    command: npm test
+  client:
+    container_name: client-test
+    command: npm test
