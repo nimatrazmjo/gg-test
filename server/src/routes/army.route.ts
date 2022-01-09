@@ -4,6 +4,6 @@ import { minimumArmy } from "../middlewares/minimum-army.middleware";
 
 const router = Router();
 
-router.get('/armies/:total', minimumArmy, generateArmyController);
+router.get('/armies/:totalArmy', minimumArmy, generateArmyController);
 
 export { router as armyRouter }

@@ -4,7 +4,7 @@ import { app } from "../app";
 describe("GET /armies/:total", () => {
   const TOTAL_ARMY = 167;
   const ARMY_API = `/api/armies`;
-  it(`Should not return 404 if ${ARMY_API} not found`, async () => {
+  it(`Should return 404 if ${ARMY_API} not found`, async () => {
     const response = await request(app).get(`${ARMY_API}/${TOTAL_ARMY}`);
     expect(response.statusCode).not.toBe(404);
   });
@@ -13,9 +13,14 @@ describe("GET /armies/:total", () => {
     await request(app).get(`${ARMY_API}/2`).expect(400);
   });
 
-  it("should return true check the armies has unique different unit types", async () => {
+  it("Should return random different amount for each troop type", async () => {
 
   });
+
+  it("should return troops bigger than zero for each unit type", async () => {
+
+  });
+
 
   it("should return 200 for successful response", async () => {
     const response = await request(app).get(`${ARMY_API}/${TOTAL_ARMY}`);

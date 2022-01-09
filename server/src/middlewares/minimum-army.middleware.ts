@@ -6,7 +6,7 @@ export const minimumArmy = (
   res: Response,
   next: NextFunction
 ) => {
-  if (+req.params.total < 3) {
+  if (+req.params.totalArmy < 3) {
     throw new BadRequestError('Total armies atleast should be 3');
   }
   next();
