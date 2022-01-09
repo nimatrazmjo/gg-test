@@ -6,5 +6,5 @@ export abstract class CustomError extends Error {
     super(meesage)
   }
 
-  abstract serialize():IErrorResponse
+  abstract serialize(): IErrorResponse
 }

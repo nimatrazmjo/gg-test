@@ -19,39 +19,31 @@ This project
 
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
 
-It is useful to design and follow a specific format when writing a problem statement. While there are several options
-for doing this, the following is a simple and straightforward template often used in Business Analysis to maintain
-focus on defining the problem.
+Every player in Empire has a castle. To let players attack another player’s castle, we need you to create armies of randomly
+distributed troops (a troop is a formation of soldiers with the same skill, such as Spearmen, Swordsmen, Archers, etc.)
+For example, we'll call your code telling it we need a random army that's 167 men strong. Assuming our available unit types to be,
+for example, Spearmen, Swordsmen and Archers, what we want from you is that you tell us what such a random army would look
+like.
 
-- IDEAL: This section is used to describe the desired or “to be” state of the process or product. At large, this section
-  should illustrate what the expected environment would look like once the solution is implemented.
-- REALITY: This section is used to describe the current or “as is” state of the process or product.
-- CONSEQUENCES: This section is used to describe the impacts on the business if the problem is not fixed or improved upon.
-  This includes costs associated with loss of money, time, productivity, competitive advantage, and so forth.
+, e.g.
+Our Input: 167
 
-Following this format will result in a workable document that can be used to understand the problem and elicit
-requirements that will lead to a winning solution.
+Example result:
+```
+63 Spearmen
 
+57 Swordsmen
+
+47 Archers
+```
 ## 💡 Idea / Solution <a name = "idea"></a>
 
-This section is used to describe potential solutions.
+I have used O(N) to acheive the above result.
 
-Once the ideal, reality, and consequences sections have been
-completed, and understood, it becomes easier to provide a solution for solving the problem.
-
-## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
-
-- What are the dependencies of your project?
-- Describe each limitation in detailed but concise terms
-- Explain why each limitation exists
-- Provide the reasons why each limitation could not be overcome using the method(s) chosen to acquire.
-- Assess the impact of each limitation in relation to the overall findings and conclusions of your project, and if
-  appropriate, describe how these limitations could point to the need for further research.
-
-## 🚀 Future Scope <a name = "future_scope"></a>
-
-Write about what you could not develop during the course of the Hackathon; and about what your project can achieve
-in the future.
+## ⛓️ Prerequisites  <a name = "limitations"></a>
+- lastet version of docker must be installed.
+- docker and docker compose must be installed.
+- if you want to use kubernets, skaffold need to be installed
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -60,48 +52,53 @@ and testing purposes. See [deployment](#deployment) for notes on how to deploy t
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+- lastet version of docker must be installed.
 
-```
-Give examples
-```
+- docker and docker compose must be installed.
 
-### Installing
+- if you want to use kubernets, skaffold need to be installed
 
-A step by step series of examples that tell you how to get a development env running.
+# Installing
 
-Say what the step will be
+You can use either `docker-compose` or  `Kubernetes` using `skaffold`
 
-```
-Give the example
-```
+## 1 - docker-compose
 
-And repeat
+- Development
 
-```
-until finished
-```
+  ```
+  npm run docker:dev
+  ```
+- Test
+
+  ```
+  npm run docker:test
+  ```
+- Production
+  ```
+  npm run docker:prod
+  ```
+
+## 2 - Kubernetes
+
+  ```
+   skaffold dev
+  ```
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+You can run the system using `docker-compose` or `skaffold`.
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
 - [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
+- [Reactjs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Docker](https://nodejs.org/en/) - Server Environment
+- [Docker Compose](https://nodejs.org/en/) - Server Environment
+- [Kubernetes](https://nodejs.org/en/) - Server Environment
+- [Skaffold](https://nodejs.org/en/) - Server Environment
 
-## ✍️ Authors <a name = "authors"></a>
+## ✍️ Author <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors)
-who participated in this project.
-
-## 🎉 Acknowledgments <a name = "acknowledgments"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- [@nimatrazmjo](https://github.com/nimatrazmjo) - Initial work

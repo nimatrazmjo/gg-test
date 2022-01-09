@@ -8,8 +8,8 @@ export class BadRequestError extends CustomError {
   }
 
   serialize(): IErrorResponse {
-      return {
-        message: this.message
-      }
+    return {
+      message: this.message
+    }
   }
 }
