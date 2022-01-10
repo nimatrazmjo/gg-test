@@ -9,7 +9,8 @@ export class Home extends Component {
         super();
         this.state = {
             totalArmy: 0,
-            result: null
+            result: null,
+            disable: false
         }
     }
 
@@ -18,9 +19,11 @@ export class Home extends Component {
     }
 
     handleSubmit = async event => {
+        this.setState({disable: true});
         event.preventDefault(0);
         const result = await axios.get(`http://localhost:4000/api/armies/${this.state.totalArmy}`);
         this.setState({result: result.data});
+        this.setState({disable: false});
     }
     render() {
         return (
@@ -30,7 +33,7 @@ export class Home extends Component {
                         <h1 className="text-5xl leading-normal font-semibold text-gray-800 tracking-tight">If you want to attack <br /> another castle, you need <br /> to create an army</h1>
                         <form onSubmit={this.handleSubmit} className="grid grid-cols-4 gap-4">
                             <FormInput type="number" placeholder="Total army" required handleChange={this.handleChange} />
-                            <CustomButton type="submit"> Make Army </CustomButton>
+                            <CustomButton type="submit" disabled={this.state.disable} value="Make Army"/>
                         </form>
                     </div>
                     <img src="images/header-img.png" alt="" className="col-md-7 drop-shadow-2xl" />
