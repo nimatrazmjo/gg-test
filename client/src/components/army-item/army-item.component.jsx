@@ -1,7 +1,5 @@
 import React from "react";
 
-const ArmyItems = ({item, value}) =>  {
-return( value > 0 ?new Array(value).fill("",0,value).map((p, i)=><img src={`/images/${item}.svg`} key={i} width={40}/>): '')
-}
+const ArmyItems = ({item, value}) =>  <img src={`/images/${item}.svg`} key={item} height={240}/>
 
 export default ArmyItems;
