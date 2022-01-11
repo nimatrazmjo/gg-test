@@ -4,4 +4,4 @@ services:
   server:
     tty: true
     container_name: server-prod
-    command: npm run deploy
+    command: npm run build &&

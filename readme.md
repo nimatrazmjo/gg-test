@@ -38,19 +38,13 @@ Example result:
 
 47 Archers
 ```
-## 💡 Idea / Solution <a name = "idea"></a>
-
-I have used O(N) to acheive the above result.
-
-## ⛓️ Prerequisites  <a name = "limitations"></a>
-- lastet version of docker must be installed.
-- docker and docker compose must be installed.
-- if you want to use kubernets, skaffold need to be installed
-
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development
 and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+
+## Folder Structure
+
 
 ### Prerequisites
 
@@ -86,10 +80,12 @@ You can use either `docker-compose` or  `Kubernetes` using `skaffold`
   ```
    skaffold dev
   ```
+## Deployment <a name = "deployment"></a>
 
-## 🎈 Usage <a name="usage"></a>
+- Docker-compose
 
-You can run the system using `docker-compose` or `skaffold`.
+- Kubernetes
+
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 
