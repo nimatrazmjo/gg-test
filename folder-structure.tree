@@ -1,0 +1,95 @@
+├── .gitignore
+├── abc.md
+├── client
+│  ├── .dockerignore
+│  ├── .gitignore
+│  ├── Dockerfile
+│  ├── Dockerfile.prod
+│  ├── package-lock.json
+│  ├── package.json
+│  ├── postcss.config.js
+│  ├── public
+│  │  ├── images
+│  │  ├── index.html
+│  │  ├── manifest.json
+│  │  └── robots.txt
+│  ├── README.md
+│  ├── src
+│  │  ├── App.js
+│  │  ├── App.scss
+│  │  ├── components
+│  │  │  ├── army-item
+│  │  │  │  └── army-item.component.jsx
+│  │  │  ├── custom-button
+│  │  │  │  └── custom-button.component.jsx
+│  │  │  ├── display-army
+│  │  │  │  └── display-army.component.jsx
+│  │  │  ├── form-input
+│  │  │  │  └── form-input.component.jsx
+│  │  │  └── nav-bar
+│  │  │    ├── nav-bar.component.jsx
+│  │  │    └── nav-bar.style.scss
+│  │  ├── index.css
+│  │  ├── index.js
+│  │  ├── pages
+│  │  │  └── home.component.jsx
+│  │  ├── reportWebVitals.js
+│  │  └── setupTests.js
+│  └── tailwind.config.js
+├── docker-compose.dev.yml
+├── docker-compose.prod.yml
+├── docker-compose.test.yml
+├── docker-compose.yml
+├── k8s
+│  ├── client-deployment.yaml
+│  ├── ingress-service.yaml
+│  └── server-deployment.yaml
+├── package-lock.json
+├── package.json
+├── readme.md
+├── screenshot.png
+├── server
+│  ├── .dockerignore
+│  ├── .env
+│  ├── .gitignore
+│  ├── Dockerfile
+│  ├── ecosystem.config.json
+│  ├── jest.config.js
+│  ├── jest.config.ts
+│  ├── package-lock.json
+│  ├── package.json
+│  ├── server.js
+│  ├── server.ts
+│  ├── src
+│  │  ├── __test__
+│  │  │  ├── armies.test.js
+│  │  │  └── armies.test.ts
+│  │  ├── app.js
+│  │  ├── app.ts
+│  │  ├── controllers
+│  │  │  ├── army.controller.js
+│  │  │  └── army.controller.ts
+│  │  ├── errors
+│  │  │  ├── bad-request.error.js
+│  │  │  ├── bad-request.error.ts
+│  │  │  ├── custom.error.js
+│  │  │  ├── custom.error.ts
+│  │  │  ├── not-found.error.js
+│  │  │  └── not-found.error.ts
+│  │  ├── interfaces
+│  │  │  ├── army.interface.js
+│  │  │  ├── army.interface.ts
+│  │  │  ├── error-response.interface.js
+│  │  │  └── error-response.interface.ts
+│  │  ├── middlewares
+│  │  │  ├── error-handler.middleware.js
+│  │  │  ├── error-handler.middleware.ts
+│  │  │  ├── minimum-army.middleware.js
+│  │  │  ├── minimum-army.middleware.ts
+│  │  │  ├── not-found.middleware.js
+│  │  │  └── not-found.middleware.ts
+│  │  └── routes
+│  │    ├── army.route.js
+│  │    └── army.route.ts
+│  └── tsconfig.json
+└── skaffold.yaml

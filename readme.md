@@ -44,7 +44,28 @@ These instructions will get you a copy of the project up and running on your loc
 and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ## Folder Structure
+```
+client                          # React project
+├── src                               
+│   ├── **/*.js
+k8s                             # Kubernetes config
+│  ├── client-deployment.yaml
+│  ├── ingress-service.yaml
+│  └── server-deployment.yaml
+server                           # Expressjs code using typescript
+├── src
+│   ├── **/*.ts
 
+├── docker-compose.dev.yml
+├── docker-compose.prod.yml
+├── docker-compose.test.yml
+├── docker-compose.yml
+├── package.json
+├── package-lock.json 
+├── package-lock.json 
+└── .gitignore
+└── skaffold.yaml
+```
 
 ### Prerequisites
 
@@ -82,11 +103,16 @@ You can use either `docker-compose` or  `Kubernetes` using `skaffold`
   ```
 ## Deployment <a name = "deployment"></a>
 
-- Docker-compose
+run
 
-- Kubernetes
+```
+skaffold run
+```
 
-
+then add following code to `/etc/hosts` file and open `http://gg.empire.com` in browser
+```
+127.0.0.1 gg.empire.com
+```
 ## ⛏️ Built With <a name = "tech_stack"></a>
 
 - [Express](https://expressjs.com/) - Server Framework
