@@ -1,5 +1,7 @@
 # Good Game Test
-<img src="./screenshot.pnh"/>
+![Getting Started](./screenshot.png)
+
+
 <p align="center">
 This project
 </p>
