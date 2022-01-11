@@ -7,7 +7,7 @@ build:
   - image: gg-client
     context: client
     docker:
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.prod
     sync:
       manual:
         - src: 'src/**/*.js'

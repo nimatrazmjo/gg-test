@@ -7,6 +7,7 @@
     "dev": "NODE_ENV=development ts-node-dev server.ts",
     "start": "pm2 start ecosystem.config.json --no-daemon",
     "build": "tsc --project './tsconfig.json'",
+    "prestart": "npm run build",
     "test": "jest --watchAll --no-cache"
   },
   "keywords": [],
