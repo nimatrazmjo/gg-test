@@ -24,7 +24,7 @@ export class Home extends Component {
             this.setState({ disable: true });
             this.setState({ error: null });
             event.preventDefault(0);
-            const result = await axios.get(`http://localhost:4000/api/armies/${this.state.totalArmy}`);
+            const result = await axios.get(`/api/armies/${this.state.totalArmy}`);
             this.setState({ result: result.data });
             this.setState({ disable: false });
         } catch (error) {

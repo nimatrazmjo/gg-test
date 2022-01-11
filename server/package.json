@@ -8,10 +8,6 @@
     "build": "tsc --project './tsconfig.json'",
     "test": "jest --watchAll --no-cache"
   },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node"
-  },
   "keywords": [],
   "dependencies": {
     "cors": "^2.8.5",
