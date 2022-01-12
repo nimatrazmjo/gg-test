@@ -3,8 +3,10 @@ kind: Config
 metadata:
   name: goodgame-test
 build:
+  googleCloudBuild:
+    projectId: goodgamestudiotest
   artifacts:
-  - image: gg-client
+  - image: us.gcr.io/goodgamestudiotest/client
     context: client
     docker:
       dockerfile: Dockerfile.prod
@@ -12,7 +14,7 @@ build:
       manual:
         - src: 'src/**/*.js'
           dest: .
-  - image: gg-server
+  - image: us.gcr.io/goodgamestudiotest/server
     context: server
     docker:
       dockerfile: Dockerfile

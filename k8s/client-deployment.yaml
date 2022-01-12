@@ -22,7 +22,7 @@ spec:
           # - Each init container must complete successfully before the next one starts.
       containers:
       - name:  client
-        image:  gg-client:latest
+        image:  us.gcr.io/goodgamestudiotest/client
         imagePullPolicy: IfNotPresent
       restartPolicy: Always
 ---

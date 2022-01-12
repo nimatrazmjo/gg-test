@@ -21,7 +21,7 @@ spec:
           # - Each init container must complete successfully before the next one starts.
       containers:
       - name:  server
-        image:  gg-server:latest
+        image:  us.gcr.io/goodgamestudiotest/server
       restartPolicy: Always
 ---
 apiVersion: v1
