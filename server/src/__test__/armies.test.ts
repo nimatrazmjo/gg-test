@@ -13,15 +13,6 @@ describe("GET /armies/:total", () => {
     await request(app).get(`${ARMY_API}/2`).expect(400);
   });
 
-  it("Should return random different amount for each troop type", async () => {
-
-  });
-
-  it("should return troops bigger than zero for each unit type", async () => {
-
-  });
-
-
   it("should return 200 for successful response", async () => {
     const response = await request(app).get(`${ARMY_API}/${TOTAL_ARMY}`);
     expect(response.statusCode).toBe(200);
