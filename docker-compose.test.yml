@@ -4,4 +4,4 @@ services:
   server:
     tty: true
     container_name: server-test
-    command: npm test
+    command: sh -c "npm install && npm test"

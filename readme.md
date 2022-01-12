@@ -86,14 +86,12 @@ You can use either `docker-compose` or  `Kubernetes` using `skaffold`
   ```
   npm run docker:dev
   ```
+  -  open http://localhost:3000
+  - GET `http://localhost:400/api/armies/:totalArmy` to crate an army
 - Test
 
   ```
   npm run docker:test
-  ```
-- Production
-  ```
-  npm run docker:prod
   ```
 
 ## 2 - Kubernetes
@@ -116,12 +114,13 @@ then add following code to `/etc/hosts` file and open `http://gg.empire.com` in 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 
 - [Express](https://expressjs.com/) - Server Framework
-- [Reactjs](https://vuejs.org/) - Web Framework
+- [Reactjs](https://reactjs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-- [Docker](https://nodejs.org/en/) - Server Environment
-- [Docker Compose](https://nodejs.org/en/) - Server Environment
-- [Kubernetes](https://nodejs.org/en/) - Server Environment
-- [Skaffold](https://nodejs.org/en/) - Server Environment
+- [Docker](https://www.docker.com/) - Server Environment
+- [Docker Compose](https://www.docker.com/) - Server Environment
+- [Kubernetes](https://kubernetes.io/) - Server Environment
+- [Skaffold](https://http://skaffold.dev/) - Server Environment
+- [PM2](https://pm2.keymetrics.io/) - production process manager
 
 ## ✍️ Author <a name = "authors"></a>
 
